@@ -4,6 +4,9 @@ Applied Estimation Project
 
 Authors: Deepak Ganesh, Tawsiful Islam, Magnus Tibbe
 
+
+[Project Report](https://github.com/deepak046/AE_project/blob/main/AE_project_report.pdf)
+
 How our code works:
 
 state_trans.m is a MATLAB function that contains the implementation for propagation of the states (angles) through time.
