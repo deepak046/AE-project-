@@ -1,6 +1,6 @@
 # Applied Estimation Project
 
-Authors: Deepak Ganesh, Tawsiful Islam, Magnus Tibbe
+### Authors: Deepak Ganesh, Tawsiful Islam, Magnus Tibbe
 
 
 Here is the [Project Report](https://github.com/deepak046/AE_project/blob/main/AE_project_report.pdf) 
