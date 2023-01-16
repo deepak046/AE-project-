@@ -1,13 +1,13 @@
-# AE_Project
-
-Applied Estimation Project
+# Applied Estimation Project
 
 Authors: Deepak Ganesh, Tawsiful Islam, Magnus Tibbe
 
 
 Here is the [Project Report](https://github.com/deepak046/AE_project/blob/main/AE_project_report.pdf) 
 
-How our code works:
+We have also made a [movie](AE_project/Double_Pendulum_movie.mp4) that shows how the position is begin estimated for a Double Pendulum by both EKF and UKF
+
+## How our code works:
 
 [State transition function](AE_project/state_trans.m) is a MATLAB function that contains the implementation for propagation of the states (angles) through time.
     returns - all the propagated states through the entirety of the simulation
@@ -23,8 +23,9 @@ How our code works:
 [Double Pendulum](AE_project/Double_Pendulum.m) - main MATLAB script that contains the implementation for Double Pendulum
 
 
-Instructions:
+## Instructions:
 
 Run the [Simple Pendulum](AE_project/Simple_Pendulum.m) (or) [Double Pendulum](AE_project/Double_Pendulum.m) script directly to see results for that respective system. 
     - The first part of the script has parameter values such as Q, R and initial angles that
     can be tweaked to test the simulations.
+ 
