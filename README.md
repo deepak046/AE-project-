@@ -5,7 +5,7 @@
 
 Here is the [Project Report](https://github.com/deepak046/AE_project/blob/main/AE_project_report.pdf) 
 
-We have also made a [movie](AE_project/Double_Pendulum_movie.mp4) that shows how the position is begin estimated for a Double Pendulum by both EKF and UKF
+We have also made a [movie](https://github.com/deepak046/AE_project/blob/main/Double_Pendulum_movie.mp4) that shows how the position is begin estimated for a Double Pendulum by both EKF and UKF
 
 ## How our code works:
 
