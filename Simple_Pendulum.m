@@ -89,8 +89,6 @@ for n=1:iterations %Runge-Kutta integrator
     omega_ekf(n+1) = mu_ekf(2);
     sigmas_ekf(:,:,n+1) = Sigma_ekf;
     Sigma_prev_ekf = Sigma_ekf;
-%     x_ekf = L*sin(theta_ekf(n));
-%     y_ekf = -L*cos(theta_ekf(n));
 
     ukf_diff1 = abs(theta(1:n+1) - state_est(1,1:n+1)');
     ekf_diff1 = abs(theta(1:n+1) - theta_ekf(1:n+1));
