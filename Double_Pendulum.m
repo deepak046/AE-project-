@@ -135,12 +135,6 @@ for n=1:iterations %Runge-Kutta 4 integrator
     sigmas(:,:,n+1) = sigma;
     sigma_prev = sigma;
 
-%     mu_prev_hope = state_est_hope(:,n);
-%     [mu_hope, sigma_hope] = pendulumUKF(mu_prev_hope, sigma_prev_hope, z, dt, sus_params);
-%     state_est_hope(:,n+1) = mu_hope;
-%     sigmas_hope(:,:,n+1) = sigma_hope;
-%     sigma_prev_hope = sigma_hope;
-
     %EKF estimation of system
     mu_prev_ekf = [theta1_ekf(n); theta2_ekf(n); omega1_ekf(n);omega2_ekf(n)];
     [mu_ekf, Sigma_ekf] = EKF(mu_prev_ekf,Sigma_prev_ekf,z,R,Q,dt,m,L);
@@ -192,11 +186,6 @@ y2_vestim = -L1*cos(state_est(1,:))-L2*cos(state_est(2,:));
 x2_vekf = L1*sin(theta1_ekf)+L2*sin(theta2_ekf);
 y2_vekf = -L1*cos(theta1_ekf)-L2*cos(theta2_ekf);
 error = sqrt((x2_vec-x2_vestim).^2+(y2_vec-y2_vestim).^2);
-
-% error1 = ((theta1-state_est(1,:)'))/iterations;
-% error2 = ((theta2-state_est(2,:)'))/iterations;
-% error1_ekf = (theta1-theta1_ekf)/iterations;
-% error2_ekf = (theta2-theta2_ekf)/iterations;
 
 movieVector = struct('cdata', cell(1, length(t)-1), 'colormap', cell(1, length(t)-1));
 
