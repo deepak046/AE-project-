@@ -3,7 +3,7 @@
 ### Authors: Deepak Ganesh, Tawsiful Islam, Magnus Tibbe
 
 
-Here is the [Project Report](https://github.com/deepak046/AE_project/blob/main/AE_project_report.pdf) 
+Here are the [Project Reports](https://github.com/deepak046/AE_project/tree/main/Project%20Reports) 
 
 We have also made a movie that shows how the position is being estimated for a Double Pendulum by both EKF and UKF
 
